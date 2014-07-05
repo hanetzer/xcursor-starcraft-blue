@@ -22,7 +22,7 @@ pkgver() {
 }
 
 build() {
-  cd "${srcdir}/${_pkgbase}"
+  cd "${srcdir}/${_pkgbase}/source"
   make
 }
 
@@ -30,10 +30,10 @@ package() {
 
   install -d -m 755 "${pkgdir}/usr/share/icons/${_pkgbase}/cursors"
 
-  install -m644 "${srcdir}/${_pkgbase}/cursors/"* \
+  install -m644 "${srcdir}/${_pkgbase}/source/cursors/"* \
     "${pkgdir}/usr/share/icons/${_pkgbase}/cursors/"
 
-  install -m644 "${srcdir}/${_pkgbase}/index.theme" \
+  install -m644 "${srcdir}/${_pkgbase}/source/index.theme" \
     "${pkgdir}/usr/share/icons/${_pkgbase}"
 }
 
