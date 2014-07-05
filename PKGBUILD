@@ -22,7 +22,7 @@ pkgver() {
 }
 
 build() {
-  cd ${_pkgbase}
+  cd "${_pkgbase}"
   make
 }
 
