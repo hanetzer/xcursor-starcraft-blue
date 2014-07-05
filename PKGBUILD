@@ -2,7 +2,7 @@
 
 _pkgbase=xcursor-starcraft-blue
 pkgname=${_pkgbase}-git
-pkgver=r18.c6dd055
+pkgver=r19.c6bd604
 pkgrel=1
 pkgdesc="Blue X11 cursors based on the original StarCraft PC game"
 arch=("any")
