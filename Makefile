@@ -2,9 +2,7 @@ XCURSORGEN=xcursorgen
 CURSOR=left_ptr
 CONFIG=$(CURSOR).config
 
-all: $(CURSOR)
-
-$(CURSOR): $(CONFIG)
+all:
 	mkdir cursors
 	$(XCURSORGEN) $(CONFIG) cursors/$(CURSOR)
 
