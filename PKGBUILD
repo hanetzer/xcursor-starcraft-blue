@@ -1,8 +1,9 @@
-# Maintainer: M. Plummer (The_NetZ) <ntzrmtthihu777 (at) gmail (dot) com>
+# Maintainer:  M. Plummer (The_NetZ) <ntzrmtthihu777 (at) gmail (dot) com>
+# Contributor: Blizzard Entertainment
 
 _pkgbase=xcursor-starcraft-blue
 pkgname=${_pkgbase}-git
-pkgver=r19.c6bd604
+pkgver=r21.f14bc2c
 pkgrel=1
 pkgdesc="Blue X11 cursors based on the original StarCraft PC game"
 arch=("any")
