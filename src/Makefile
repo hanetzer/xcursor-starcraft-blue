@@ -1,10 +1,16 @@
 XCURSORGEN=xcursorgen
-CURSOR=left_ptr
-CONFIG=$(CURSOR).config
+SOURCES=left_ptr
+CONFIG=$(SOURCES).config
 
-all:
+all: cursor links
+
+cursor:
 	mkdir cursors
-	$(XCURSORGEN) $(CONFIG) cursors/$(CURSOR)
+	$(XCURSORGEN) $(CONFIG) cursors/$(SOURCES)
+
+links:
+	cd cursors/; \
+	ln -s left_ptr top_left_arrow
 
 clean:
 	rm -rf cursors
