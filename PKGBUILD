@@ -2,7 +2,7 @@
 
 _pkgbase=xcursor-starcraft-blue
 pkgname=${_pkgbase}-git
-pkgver=r7.7b8f3e2
+pkgver=r10.a92b20c
 pkgrel=1
 pkgdesc="Blue X11 cursors based on the original StarCraft PC game"
 arch=("any")
@@ -17,7 +17,8 @@ md5sums=("SKIP")
 
 pkgver() {
   cd ${_pkgbase}
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" \
+    "$(git rev-parse --short HEAD)"
 }
 
 build() {
