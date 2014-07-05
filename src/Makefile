@@ -9,8 +9,7 @@ cursor:
 	$(XCURSORGEN) $(CONFIG) cursors/$(SOURCES)
 
 links:
-	cd cursors/; \
-	ln -s left_ptr top_left_arrow
+	$(MAKE) -C cursors -f ../Makefile.links
 
 clean:
 	rm -rf cursors

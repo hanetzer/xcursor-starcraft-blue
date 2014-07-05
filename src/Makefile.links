@@ -1,0 +1,2 @@
+all:
+	ln -s left_ptr top_left_arrow
