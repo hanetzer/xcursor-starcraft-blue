@@ -2,7 +2,7 @@
 
 _pkgbase=xcursor-starcraft-blue
 pkgname=${_pkgbase}-git
-pkgver=r10.a92b20c
+pkgver=r13.eca8981
 pkgrel=1
 pkgdesc="Blue X11 cursors based on the original StarCraft PC game"
 arch=("any")
@@ -30,10 +30,10 @@ package() {
 
   install -d -m 755 "${pkgdir}/usr/share/icons/${_pkgbase}/cursors"
 
-  install -m644 "${srcdir}/${_pkgbase}/cursors/*" \
+  install -m644 "${srcdir}/${_pkgbase}/cursors/"* \
     "${pkgdir}/usr/share/icons/${_pkgbase}/cursors/"
 
-  install -m644 "${srcdir}${_pkgbase}/index.theme" \
+  install -m644 "${srcdir}/${_pkgbase}/index.theme" \
     "${pkgdir}/usr/share/icons/${_pkgbase}"
 }
 
