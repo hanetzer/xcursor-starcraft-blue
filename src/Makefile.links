@@ -1,2 +1,8 @@
-all:
-	ln -s left_ptr top_left_arrow
+LEFT_PTR=top_left_arrow arrow
+
+all: $(LEFT_PTR)
+
+$(LEFT_PTR):
+	for var in $(LEFT_PTR); do \
+		ln -s left_ptr $$var; \
+	done
